@@ -1,0 +1,128 @@
+body {
+  background-color: hsl(0, 0%, 95%);
+  font-size: 15px;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  margin-left:250px;
+  margin-top: 250px;
+  box-sizing: border-box;
+  max-width: 900px;
+}
+
+.left-flex-item {
+  background-color: hsl(31, 77%, 52%);
+  padding: 50px;
+  max-width: 300px;
+  height: 570px;
+  border-radius: 10px 0 0 10px;
+  box-sizing: border-box;
+}
+
+.middle-flex-item {
+  background-color: hsl(184, 100%, 22%);
+  padding: 50px;
+  max-width: 300px;
+  height: 570px;
+  box-sizing: border-box;
+}
+
+.right-flex-item {
+  background-color: hsl(179, 100%, 13%);
+  padding: 50px;
+  max-width: 300px;
+  height: 570px;
+  border-radius: 0 10px 10px 0;
+  box-sizing: border-box;
+}
+
+h3 {
+  font-family: 'Big Shoulders Display', cursive;
+  font-size: 3rem;
+  color: hsl(0, 0%, 95%);
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 30px;
+}
+
+p {
+  font-family: 'Lexend Deca', sans-serif;
+  color: hsla(0, 0%, 100%, 0.75);
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 1rem;
+}
+
+button {
+  background-color: hsl(0, 0%, 95%);
+  width: 140px;
+  height: 45px;
+  border-radius: 35px;
+  padding: 10px;
+  font-size: 0.9rem;
+  margin: 40px 0 30px 0;
+  border: none;
+  font-weight: 400;
+}
+.lfi {
+  color: hsl(31, 77%, 52%);
+}
+
+.mfi {
+  color: hsl(184, 100%, 22%);
+}
+
+.rfi {
+  color: hsl(179, 100%, 13%);
+}
+
+button:hover, button:active {
+  background-color: transparent;
+  color: hsl(0, 0%, 95%);
+  border: 2px solid hsl(0, 0%, 95%);
+  cursor: pointer;
+}
+
+.attribution { 
+  font-size: 20px; 
+  text-align: center;
+  padding-top: 30px;
+  color: hsl(184, 100%, 22%);
+}
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
+
+@media only screen and (max-width:900px) {
+  
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+  }
+  
+  .left-flex-item {
+    max-width: 350px;
+    max-height: 500px;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .middle-flex-item {
+    max-width: 350px;
+    max-height: 500px;
+  }
+  
+  .right-flex-item {
+    max-width: 350px;
+    max-height: 500px;
+    border-radius: 0 0 10px 10px;
+  }
+  
+  .attribution {
+    font-size: 0.7rem;
+    margin-left: 270px;
+    width: 285px;
+  }
+}
